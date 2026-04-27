@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prokletý zrcadlo (Hounted Mirror)</title>
+    <link rel="stylesheet" href="../../style/style-cursed-objects.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+    <script src="../../scripts/lightning.js"></script>
+</head>
+<div class="rain"></div>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+</div>
+    </nav>
+    <div class="vse">
+        <header>
+            <h1>Prokleté zrcadlo (Haunted Mirror)</h1>
+        </header>
+        <main class="mirror-main">
+            <img src="../../images/mirror.png" alt="Prokleté zrcadlo" class="mirror-img" style="max-width:220px;display:block;margin:30px auto;">
+            <section class="mirror-info" style="max-width:600px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Prokleté zrcadlo má v každé hře šanci 1 ku 7, že bude vybráno jako prokletý předmět, který se objeví na výchozí obtížnosti, a to na jednom konkrétním místě na mapě.<br><br>
+                </p>
+                <h2>Aktivace a použití</h2>
+                <p>Zrcadlo lze zapnout a používat pouze uvnitř vyšetřovací oblasti. Jakmile je vyneseno ven, automaticky se deaktivuje.<br><br>
+                Po aktivaci zrcadlo ukáže pohled na oblíbenou místnost jako panoramatický záběr z jejího středu, což hráčům umožňuje určit tuto místnost podle okolí. Tento pohled je živý přenos, takže jsou vidět rozsvícená světla, posunuté předměty, vybavení nebo hráči v místnosti. Jedinou výjimkou je model samotného hráče.<br><br>
+                 Zrcadlo také vydává slabou záři, díky které je možné do oblíbené místnosti nahlédnout – tuto záři vidí všichni hráči, včetně uživatele, i mimo zrcadlo. To může pomoci potvrdit správnou místnost a informovat ostatní hráče, kde se nachází.<br><br>
+                 Každé použití prokletého zrcadla snižuje příčetnost rychlostí 7,5 % za sekundu, nebo o 20 % za použití, podle toho, co je vyšší. To znamená, že i při použití kratším než přibližně 2,67 sekundy se příčetnost sníží minimálně o 20 %. Do této doby se počítá i animace zvednutí zrcadla, ale ne jeho spuštění.<br><br>
+                Zrcadlo se vizuálně i zvukově rozbije a spustí prokletý lov, pokud:
+                <li>Příčetnost uživatele při pohledu do zrcadla klesne na 0 %</li>
+                <li>Hráč aktivuje zrcadlo s příčetností pod 20 %</li>
+                <br><br>
+                Jakmile se zrcadlo rozbije, automaticky se sklopí a nelze jej po zbytek vyšetřování použít.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+<div class="back-button">
+    <a href="../cursed_objects/home-cursed-objects.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

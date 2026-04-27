@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarotové karty (Tarot Cards)</title>
+    <link rel="stylesheet" href="../../style/style-cursed-objects.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+    <script src="../../scripts/lightning.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+</div>
+    </nav>
+    <div class="vse">
+        <header>
+            <h1>Tarotové karty (Tarot Cards)</h1>
+        </header>
+        <main class="mirror-main">
+            <section class="mirror-info" style="max-width:600px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Jako prokletý předmět mají tarotové karty šanci 1 ku 7, že budou při běžné obtížnosti (kromě Insanity) vybrány jako prokletý předmět, který se objeví v každé hře. Každá mapa má jedno konkrétní místo, kde se mohou tarotové karty objevit.<br><br>
+                    Tarotové karty lze sebrat prázdnou rukou a vždy lze vytáhnout pouze jednu kartu najednou. Karty lze tahat pouze uvnitř vyšetřovací oblasti.<br><br>
+                    Každý balíček tarotových karet obsahuje 10 náhodně vygenerovaných karet. Existuje 10 různých typů karet, které může hráč vytáhnout, přičemž každá má unikátní efekt na hráče nebo ducha. Po použití se každá karta spálí a zmizí v plamenech specifické barvy. Každý typ karty má jinou, nezávislou šanci na vylosování, takže některé typy karet mohou být v jednom balíčku vícekrát nebo vůbec. <br><br>
+                    Jakmile je všech deset karet použito, žádné další už hráč v dané hře nedostane. Po spotřebování balíčku budou všechny budoucí hony prodlouženy o 20 sekund, i když předtím nebyla vytažena karta Death.<br><br>
+                </p>
+                <h1>Tipy karet</h1>
+            </section>
+        </main>
+    </div>
+    
+
+      <section class="tarot-cards-list" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; margin: 40px 0;">
+        
+    <div class="cardsection">
+        <!-- The Tower -->
+    <div class="tarot-card-box">
+        <img src="../../images/tower.webp" alt="The Tower" class="tarot-card-img">
+        <h3>The Tower</h3>
+        <p><b>Efekt:</b> Zdvojnásobí veškerou aktivitu ducha na 20 sekund.</p>
+        <p><b>Barva spálení:</b> <span style="color:#3af;">Modrá</span></p>
+        <p><b>Šance:</b> 20%</p>
+    </div>
+    <!-- The Wheel of Fortune -->
+    <div class="tarot-card-box">
+        <img src="../../images/wheel.webp" alt="The Wheel of Fortune" class="tarot-card-img">
+        <h3>The Wheel of Fortune</h3>
+        <p><b>Efekt:</b> Zelená karta: +25% sanity. Červená karta: -25% sanity.</p>
+        <p><b>Barva spálení:</b> <span style="color:green;">Zelená</span> / <span style="color:red;">Červená</span></p>
+        <p><b>Šance:</b> 20%</p>
+    </div>
+    <!-- The Fool -->
+    <div class="tarot-card-box">
+        <img src="../../images/fool.webp" alt="The Fool" class="tarot-card-img">
+        <h3>The Fool</h3>
+        <p><b>Efekt:</b> Napodobí jinou kartu, ale při spálení se změní na The Fool (bez efektu).</p>
+        <p><b>Barva spálení:</b> <span style="color:purple;">Světle fialová</span></p>
+        <p><b>Šance:</b> 17%, 100% během honu</p>
+    </div>
+    <!-- The Devil -->
+    <div class="tarot-card-box">
+        <img src="../../images/devil.webp" alt="The Devil" class="tarot-card-img">
+        <h3>The Devil</h3>
+        <p><b>Efekt:</b> Vyvolá ghost event u nejbližšího hráče.</p>
+        <p><b>Barva spálení:</b> <span style="color:pink;">Růžová</span></p>
+        <p><b>Šance:</b> 10%</p>
+    </div>
+    <!-- Death -->
+    <div class="tarot-card-box">
+        <img src="../../images/death.webp" alt="Death" class="tarot-card-img">
+        <h3>Death</h3>
+        <p><b>Efekt:</b> Spustí prokletý hon.</p>
+        <p><b>Barva spálení:</b> <span style="color:purple;">Fialová</span></p>
+        <p><b>Šance:</b> 10%</p>
+    </div>
+    </div>
+    <div class="cardsection">
+    <!-- The Hermit -->
+    <div class="tarot-card-box">
+        <img src="../../images/hermit.webp" alt="The Hermit" class="tarot-card-img">
+        <h3>The Hermit</h3>
+        <p><b>Efekt:</b> Duch se vrátí do své místnosti a 1 minutu ji neopustí.</p>
+        <p><b>Barva spálení:</b> <span style="color:cyan;">Azurová</span></p>
+        <p><b>Šance:</b> 10%</p>
+    </div>
+    <!-- The Sun -->
+    <div class="tarot-card-box">
+        <img src="../../images/sun.webp" alt="The Sun" class="tarot-card-img">
+        <h3>The Sun</h3>
+        <p><b>Efekt:</b> Nastaví hráčovu sanity na 100%.</p>
+        <p><b>Barva spálení:</b> <span style="color:gold;">Žlutá</span></p>
+        <p><b>Šance:</b> 5%</p>
+    </div>
+    <!-- The Moon -->
+    <div class="tarot-card-box">
+        <img src="../../images/moon.webp" alt="The Moon" class="tarot-card-img">
+        <h3>The Moon</h3>
+        <p><b>Efekt:</b> Nastaví hráčovu sanity na 0%.</p>
+        <p><b>Barva spálení:</b> <span style="color:#fff;">Bílá</span></p>
+        <p><b>Šance:</b> 5%</p>
+    </div>
+    <!-- The High Priestess -->
+    <div class="tarot-card-box">
+        <img src="../../images/wngs.webp" alt="The High Priestess" class="tarot-card-img">
+        <h3>The High Priestess</h3>
+        <p><b>Efekt:</b> Oživí náhodného mrtvého hráče (nebo příštího, kdo zemře).</p>
+        <p><b>Barva spálení:</b> <span style="color:gold;">Světle žlutá</span></p>
+        <p><b>Šance:</b> 2%</p>
+    </div>
+    <!-- The Hanged Man -->
+    <div class="tarot-card-box">
+        <img src="../../images/hangedman.webp" alt="The Hanged Man" class="tarot-card-img">
+        <h3>The Hanged Man</h3>
+        <p><b>Efekt:</b> Okamžitě zabije hráče.<br><small>Nelze vytáhnout při zapnutém Friendly Ghost.</small></p>
+        <p><b>Barva spálení:</b> <span style="color:#aaa;">N/A</span></p>
+        <p><b>Šance:</b> 1%</p>
+    </div>
+    </div>
+</section>
+</body>
+<div class="back-button">
+    <a href="../cursed_objects/home-cursed-objects.html">Zpět</a>
+</div>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</body>
+
+</html>

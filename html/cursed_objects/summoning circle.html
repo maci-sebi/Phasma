@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyvolávací kruh (Summoning Circle)</title>
+    <link rel="stylesheet" href="../../style/style-cursed-objects.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+    <script src="../../scripts/lightning.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+</div>
+    </nav>
+    <div class="vse">
+        <header>
+            <h1>Vyvolávací kruh (Summoning Circle)</h1>
+        </header>
+        <main class="mirror-main">
+            <img src="../../images/Summoning-Circle.png" alt="Vyvolávací kruh" class="mirror-img" style="max-width:220px;display:block;margin:30px auto;">
+            <section class="mirror-info" style="max-width:600px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                 Jako prokletý předmět má vyvolávací kruh šanci 1 ku 7, že bude vybrán jako předmět, který se na mapě objeví na přednastavených obtížnostech, a to na jednom konkrétním místě na mapě.
+                </p><br><br>
+                <h2>Použití</h2>
+                <p>
+                    Vyvolávací kruh lze použít zapálením všech pěti červených svíček – zamířením na ně a stisknutím klávesy pro sekundární použití s rozžhaveným zapalovačem nebo zapáleným světlem. Každá zapálená svíčka odebere 16 % příčetnosti všem hráčům v okolí. Na rozdíl od jiných zdrojů ohně nemůže duch tyto svíčky zapálit.<br><br>
+                    Svíčky ve vyvolávacím kruhu může duch sfouknout stejně jako běžné světla, ale samy od sebe nezhasnou, kromě situace, kdy jsou zapáleny při příčetnosti hráče nižší než 16 %.[pozn. 1] Opětovné zapálení zhasnuté svíčky opět odebere 16 % příčetnosti všem hráčům v okolí.<br><br>
+                    Jakmile jsou všechny svíčky zapáleny, duch je vyvolán a plně zhmotněn, kromě ducha typu Shade, který se může objevit jako průhledný stín. Vyvolaný duch zůstane nehybný po dobu 5 sekund a nemůže hráče zabít. Toto období je považováno za událost ducha. Přední dveře se však ihned po zapálení poslední svíčky zamknou. Po této události se světla v místnosti s kruhem zhasnou a duch okamžitě zahájí prokletý lov na místě, bez další jednosekundové prodlevy. Jakmile je kruh aktivován, nelze jej znovu použít.<br><br>
+                    Pokud je svíčka zapálena při příčetnosti nižší než 16 %, mohou nastat dvě možnosti:
+                    <li>Pokud to není poslední svíčka, svíčka se po krátké době sama zhasne.</li>
+                    <li>Pokud je to poslední svíčka, neproběhne žádná „událost ducha“ a prokletý lov začne ihned po jednosekundové prodlevě.</li>
+                    <br><br>
+                    Pokud je poslední svíčka zapálena během probíhajícího lovu, duch bude místo toho teleportován do středu kruhu a může okamžitě zabít hráče; tím se časovač aktuálního lovu nerestartuje, ale všechny budoucí lovy budou prodlouženy jako obvykle.
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+<div class="back-button">
+    <a href="../cursed_objects/home-cursed-objects.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

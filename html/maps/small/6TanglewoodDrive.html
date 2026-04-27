@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>6 Tanglewood Drive</title>
+        <link rel="stylesheet" href="../../../style/style-maps.css">
+        <link rel="icon" href="../../../images/Spirit.webp">
+        <script src="../../../scripts/script.js" defer></script>
+        <script src="../../../scripts/rain.js" defer></script>
+        <script src="../../../scripts/modal.js" defer></script>
+    </head>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div>
+    <nav class="sidebar">
+        <a href="../../../index.html">Domů</a>
+        <a href="../../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../../html/needed/o-hře.html">O hře</a>
+        <a href="../../../html/needed/o-mě.html">O mně</a>
+        <a href="../../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+    </div>
+    </nav>
+    <header>
+        <h1>6 Tanglewood Drive</h1>
+    </header>
+    <div class="maps-container" id="small-maps">
+
+        <div class="map-grid">
+            <div class="map-item" id="tanglewood">
+                    <img src="../../../images/tengle-cheat.webp" alt="6 Tanglewood Drive" class="map-image" id="mapImage">     
+        </div>
+        <div class="map-grid">
+            <div class="map-item" id="tanglewood">
+             <p class="paragraf">Lokace prokletých předmětů nalezlete na zjednodušené mapě. <br><br>
+                Když ji rozkliknete mapa se zvětší a můžete překlikávat mezi specifickými lokacemi.</p>   
+        </div>
+    <div class="hidden-images">
+        <img src="../../../images/cursedloc.jpg" alt="cursed" data-index="0">
+        <img src="../../../images/Tanglewood-Cards.webp" alt="Cards" data-index="1">
+        <img src="../../../images/Tanglewood-Circle2.webp" alt="Circle" data-index="2">
+        <img src="../../../images/Tanglewood-Doll.webp" alt="Doll" data-index="3">
+        <img src="../../../images/Tanglewood-Mirror.webp" alt="Mirror" data-index="4">
+        <img src="../../../images/Tanglewood-Music2.webp" alt="Music" data-index="5">
+        <img src="../../../images/Tanglewood-Ouija2.webp" alt="Ouija" data-index="6">
+    </div>
+</div>
+    <div class="modal" id="imageModal">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <button class="modal-prev" id="prevImage">&#10094;</button>
+        <img src="" alt="Zvětšený obrázek" id="modalImage">
+        <button class="modal-next" id="nextImage">&#10095;</button>
+    </div>
+    
+</div> 
+</div> 
+<div class="back-button">
+    <a href="../home-maps.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

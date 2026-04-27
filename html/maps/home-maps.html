@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasma_maps</title>
+    <link rel="stylesheet" href="../../style/style-maps.css">
+    <link rel="icon" href="..\..\images\Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+    </div>
+    </nav>
+    <header>
+        <h1>MAPY</h1>
+    </header>
+    <div class="maps-container" id="small-maps">
+        <h1>Malé mapy</h1><br><br>
+        <div class="map-grid">
+            <div class="map-item" id="tanglewood">
+                <a href="../../html/maps/small/6TanglewoodDrive.html">
+                    <img src="../../images/Tanglewood.webp" alt="Tanglewood" class="map-image">
+                    <h2>6 Tanglewood Drive</h2>
+                </a>
+            </div>
+            <div class="map-item" id="ridgeview">
+                <a href="../../html/maps/small/10RidgeviewCourt.html">
+                    <img src="../../images/Ridgeview.webp" alt="Ridgeview" class="map-image">
+                    <h2>10 Ridgeview Court</h2>
+                </a>
+            </div>
+            <div class="map-item" id="willow">
+                <a href="../../html/maps/small/13WillowStreet.html">
+                    <img src="../../images/Willow_new.webp" alt="Ridgeview" class="map-image">
+                    <h2>13 Willow Street</h2>
+                </a>
+            </div>
+            <div class="map-item" id="edgefield">
+                <a href="../../html/maps/small/42EdgefieldRoad.html">
+                    <img src="../../images/Edgefield.webp" alt="Edgefield" class="map-image">
+                    <h2>42 Edgefield Road</h2>
+                </a>
+            </div>
+            <div class="map-item" id="campwoodwind">
+                <a href="../../html/maps/small/CampWoodwind.html">
+                    <img src="../../images/Campwoodwind.webp" alt="Camp Woodwind" class="map-image">
+                    <h2>Camp Woodwind</h2>
+                </a>
+            </div>
+            <div class="map-item" id="grafton">
+                <a href="../../html/maps/small/GraftonFarmhouse.html">
+                    <img src="../../images/Grafton.webp" alt="Grafton" class="map-image">
+                    <h2>Grafton Farmhouse</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Medium Maps -->
+    <div class="maps-container" id="medium-maps">
+        <h1>Středně velké mapy</h1><br><br>
+        <div class="map-grid">
+            <div class="map-item" id="bleasdale">
+                <a href="../../html/maps/medium/BleasdaleFarmhouse.html">
+                    <img src="../../images/Bleasdale.webp" alt="Bleasdale" class="map-image">
+                    <h2>Bleasdale Farmhouse</h2>
+                </a>
+            </div>
+            <div class="map-item" id="maple">
+                <a href="../../html/maps/medium/MapleLodgeCampsite.html">
+                    <img src="../../images/Maple.webp" alt="Maple" class="map-image">
+                    <h2>Maple Lodge Campsite</h2>
+                </a>
+            </div>
+            <div class="map-item" id="pointhope">
+                <a href="../../html/maps/medium/PointHope.html">
+                    <img src="../../images/Phope.webp" alt="Point Hope" class="map-image">
+                    <h2>Point Hope</h2>
+                </a>
+            </div>
+            <div class="map-item" id="prison">
+                <a href="../../html/maps/medium/Prison.html">
+                    <img src="../../images/Prison.webp" alt="Prison" class="map-image">
+                    <h2>Prison</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Large Maps -->
+    <div class="maps-container" id="large-maps">
+        <h1>Velké mapy</h1><br><br>
+        <div class="map-grid">
+            <div class="map-item" id="highschool">
+                <a href="../../html/maps/large/BrownstoneHighSchool.html">
+                    <img src="../../images/High_school.webp" alt="High school" class="map-image">
+                    <h2>Brownstone High School</h2>
+                </a>
+            </div>
+            <div class="map-item" id="sunnymeadows">
+                <a href="../../html/maps/large/SunnyMeadows.html">
+                    <img src="../../images/Smmi.webp" alt="Sunny Meadows" class="map-image">
+                    <h2>Sunny Meadows (restricted)</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+<div class="back-button">
+    <a href="../../index.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

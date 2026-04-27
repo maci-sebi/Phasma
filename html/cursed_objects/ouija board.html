@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouija Board (Ouija deska)</title>
+    <link rel="stylesheet" href="../../style/style-cursed-objects.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+    <script src="../../scripts/lightning.js"></script>
+</head>
+<body>
+  <div class="search-container">
+    <div class="search-panel">
+        <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+        <button onclick="search()">Hledat</button>
+        <div id="search-results"></div>
+    </div>
+    <div class="search-arrow">▼</div>
+</div>
+    <div class="rain"></div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+</div>
+    </nav>
+    <div class="vse">
+        <header>
+            <h1>Ouija deska (Ouija Board)</h1>
+        </header>
+        <main class="mirror-main">
+            <img src="../../images/Ouija_Board_New.webp" alt="Ouija Board" class="mirror-img" style="max-width:220px;display:block;margin:30px auto;">
+            <section class="mirror-info" style="max-width:600px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Ouija Board má v každé hře šanci 1 ku 7, že bude vybrána jako prokletý předmět, který se objeví. Každá mapa má jedno konkrétní místo, kde se může Ouija Board objevit.<br><br>
+                    Ouija Board lze sebrat prázdnou rukou. Pokud přepneš na jiný předmět, Ouija Board ti vypadne z inventáře.<br><br>
+                </p>
+                <h2>Aktivace</h2>
+                <p>
+                  Ouija Board lze aktivovat interakcí, pokud ji nedržíš, nebo přímo přepnutím, když ji držíš. Planžeta (ukazovátko) spadne na desku, což znamená, že je deska aktivní. V současnosti existuje chyba, kdy se fáze přípravy ukončí pouze tehdy, když je rozpoznána platná fráze, a ne při samotné aktivaci desky.<br><br>
+                </p>
+                <h2>Pokládání otázek</h2>
+                <p>
+                  Pokud používáš voice chat, Ouija Board po aktivaci reaguje na hlasové vstupy v okruhu 5 metrů. Hráč, který pokládá otázku, musí být ve vyšetřování oblasti, ale nemusí být v místnosti s duchem (ani v jeho aktuální místnosti).<br><br>
+                  Pokud je otázka rozpoznána, planžeta se přesune na odpověď a kolem Ouija Board se objeví EMF úroveň 2. Pokud je EMF 5 důkazem pro daného ducha, je zde 33% šance, že se objeví EMF 5 při každé otázce. <br><br>
+                  To, zda je duch „stydlivý“, nemá vliv na jeho schopnost odpovídat přes Ouija Board. Pokud se po položení otázky nic nestane, buď není deska aktivovaná, nebo fráze nebyla rozpoznána. <br><br>
+                </p>
+                <h2>Deaktivace</h2>
+                <p>
+                  Pro deaktivaci Ouija Boardu musí některý z blízkých hráčů říct „Goodbye“, čímž planžeta zmizí. Poté lze desku bezpečně opustit. Ouija Board se také automaticky deaktivuje, pokud hráč s deskou opustí oblast vyšetřování.<br><br>
+                  Ouija Board shoří a rozpadne se (a spustí prokletý hon), pokud: <br>
+                  <li>Není žádný hráč do 5 metrů od stále aktivní desky (tj. když se vzdálíš)</li>
+                  <li>Hráč, který pokládá otázky, má méně sanity, než je potřeba k „zaplacení“ otázky</li>
+                </p>
+
+            </section>
+            <table class="monkeypaw-table">
+  <thead>
+    <tr>
+      <th>Kategorie</th>
+      <th>Popis</th>
+      <th>Otázky</th>
+      <th>Odpovědi</th>
+      <th>Ztráta sanity</th>
+      <th>Může způsobit smrt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Místo</td>
+      <td>Odpoví názvem místnosti, kde se duch právě nachází (pokud není známá oblíbená místnost, odpoví aktuální místnost).</td>
+      <td>
+        <ul>
+          <li>Where are you?</li>
+          <li>What is your favorite room?</li>
+          <li>Where is your room?</li>
+          <li>What is your room?</li>
+        </ul>
+      </td>
+      <td>Název místnosti</td>
+      <td>50%</td>
+      <td>Ano</td>
+    </tr>
+    <tr>
+      <td>Blízkost</td>
+      <td>Odpoví, zda je duch ve stejné místnosti jako tazatel.</td>
+      <td>
+        <ul>
+          <li>Are you here?</li>
+          <li>Are you close?</li>
+        </ul>
+      </td>
+      <td>Ano/Ne</td>
+      <td>20%</td>
+      <td>Ne</td>
+    </tr>
+    <tr>
+      <td>Místo kosti</td>
+      <td>Odpoví názvem místnosti, kde se nachází kost.</td>
+      <td>
+        <ul>
+          <li>Where is the bone?</li>
+          <li>Where did you die?</li>
+          <li>Where is your body?</li>
+        </ul>
+      </td>
+      <td>Název místnosti</td>
+      <td>20%</td>
+      <td>Ano</td>
+    </tr>
+    <tr>
+      <td>Schovka</td>
+      <td>Spustí odpočet od 5 nebo 3, poté se rozsvítí deska a duch začne prokletý hon.</td>
+      <td>
+        <ul>
+          <li>Do you want to play hide and seek?</li>
+        </ul>
+      </td>
+      <td>Odpočet dolů</td>
+      <td>0%</td>
+      <td>Ano</td>
+    </tr>
+    <tr>
+      <td>Počet osob</td>
+      <td>Odpoví počtem lidí v místnosti (ovlivněno počtem osob v místnosti).</td>
+      <td>
+        <ul>
+          <li>How many people are in this room?</li>
+          <li>How many people are here?</li>
+          <li>How many ghosts are in this room?</li>
+          <li>How many ghosts are present?</li>
+        </ul>
+      </td>
+      <td>?</td>
+      <td>20%</td>
+      <td>Ne</td>
+    </tr>
+    <tr>
+      <td>Duch reaguje na Spirit Box</td>
+      <td>Odpoví, zda duch reaguje na Spirit Box.</td>
+      <td>
+        <ul>
+          <li>Do you respond to everyone?</li>
+        </ul>
+      </td>
+      <td>Ano/Ne</td>
+      <td>20%</td>
+      <td>Ano</td>
+    </tr>
+    <tr>
+      <td>Věk</td>
+      <td>Odpoví věkem ducha (náhodné číslo mezi 10–90, Thaye může být vyšší).</td>
+      <td>
+        <ul>
+          <li>How old are you?</li>
+          <li>What is your age?</li>
+          <li>Are you old?</li>
+          <li>Are you young?</li>
+        </ul>
+      </td>
+      <td>10–90</td>
+      <td>5%</td>
+      <td>Ano</td>
+    </tr>
+    <tr>
+      <td>Doba smrti</td>
+      <td>Odpoví, jak dlouho je duch mrtvý (náhodné číslo mezi 50–1000).</td>
+      <td>
+        <ul>
+          <li>How long have you been dead?</li>
+          <li>How many years ago did you die?</li>
+          <li>How long have you been here?</li>
+          <li>How long ago did you die?</li>
+          <li>When did you die?</li>
+        </ul>
+      </td>
+      <td>50–1000</td>
+      <td>5%</td>
+      <td>Ne</td>
+    </tr>
+    <tr>
+      <td>Způsob smrti</td>
+      <td>Odpoví způsobem smrti ducha (náhodně z přednastavených možností).</td>
+      <td>
+        <ul>
+          <li>How did you die?</li>
+        </ul>
+      </td>
+      <td>Např. Accident, Drowned, Murder, Stab, Fall, Slipped…</td>
+      <td>5%</td>
+      <td>Ano</td>
+    </tr>
+    <tr>
+      <td>Pocity</td>
+      <td>Odpoví, jak se duch cítí.</td>
+      <td>
+        <ul>
+          <li>How do you feel?</li>
+          <li>Are you okay?</li>
+          <li>How are you?</li>
+        </ul>
+      </td>
+      <td>Např. Angry, Cold, Empty, Hurt, Lonely, Lost, Peace, Revenge, Scared, Sick, Strong, Weak…</td>
+      <td>5%</td>
+      <td>Ne</td>
+    </tr>
+    <tr>
+      <td>Účel</td>
+      <td>Odpoví, proč je duch přítomen.</td>
+      <td>
+        <ul>
+          <li>Why are you here?</li>
+          <li>What do you want?</li>
+        </ul>
+      </td>
+      <td>Např. Hate, Kill, Lonely, Lost, Love, Peace, Revenge, Trapped, Vengeance, You…</td>
+      <td>5%</td>
+      <td>Ne</td>
+    </tr>
+    <tr>
+      <td>Vtipy</td>
+      <td>Lze použít pár vtipných otázek, duch na ně reaguje vtipně.</td>
+      <td>
+        <ul>
+          <li>Knock knock</li>
+          <li>Marco</li>
+        </ul>
+      </td>
+      <td>Who's there / Polo</td>
+      <td>5%</td>
+      <td>Ne</td>
+    </tr>
+  </tbody>
+</table>
+        </main>
+    </div>
+</body>
+<div class="back-button">
+    <a href="../cursed_objects/home-cursed-objects.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

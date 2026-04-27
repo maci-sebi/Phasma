@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasma_ghosts</title>
+    <link rel="stylesheet" href="../../style/style-ghost.css">
+    <link rel="icon" href="..\..\images\Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+<nav class="sidebar">
+    <a href="../../index.html">Domů</a>
+    <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+    <a href="../../html/maps/home-maps.html">Mapy</a>
+    <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+    <a href="../../html/needed/kontakt.html">Kontakt</a>
+    <a href="../../html/needed/o-hře.html">O hře</a>
+    <a href="../../html/needed/o-mě.html">O mně</a>
+    <a href="../../html/needed/pravidla.html">Právní info</a>
+     <div class="sidebar-buttons">
+<a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+    <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+</a>
+<a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+    <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+</a>
+<a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+    <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+</a>
+</div>
+</nav>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div>
+<div class="ghosts-all">
+    <div class="nadpis-duchu">
+    <header>
+        <h1>DUCHOVÉ</h1>
+    </header>
+    </div>
+    <div class="seznam">
+        <div class="paper-container">
+            <img src="../../images/paper.png" alt="paper" class="paper">
+            <div class="content">
+                <h2>Evidence</h2>
+                <div class="evidence-section">
+                    <ul class="evidence-list">
+                        <li><input type="checkbox" id="emf" data-evidence="emf"> EMF Level 5</li>
+                        <li><input type="checkbox" id="ultraviolet" data-evidence="ultraviolet"> Ultraviolet</li>
+                        <li><input type="checkbox" id="ghost-writing" data-evidence="ghost-writing"> Ghost Writing</li>
+                        <li><input type="checkbox" id="freezing" data-evidence="freezing"> Freezing Temperatures</li>
+                    </ul>
+                    <ul class="evidence-list">
+                        <li><input type="checkbox" id="dots" data-evidence="dots"> D.O.T.S Projector</li>
+                        <li><input type="checkbox" id="ghost-orb" data-evidence="ghost-orb"> Ghost Orb</li>
+                        <li><input type="checkbox" id="spirit-box" data-evidence="spirit-box"> Spirit Box</li>
+                    </ul>
+                </div>
+                <br><br>
+                <h3 class="selected-ghost"></h3>
+                <div class="ghosts-section">
+                    <ul class="ghost-list">
+                        <li><a href="Spirit.html" data-ghost="spirit">Spirit</a></li>
+                        <li><a href="Poltergeist.html" data-ghost="poltergeist">Poltergeist</a></li>
+                        <li><a href="Mare.html" data-ghost="mare">Mare</a></li>
+                        <li><a href="Demon.html" data-ghost="demon">Demon</a></li>
+                        <li><a href="Yokai.html" data-ghost="yokai">Yokai</a></li>
+                        <li><a href="Myling.html" data-ghost="myling">Myling</a></li>
+                        <li><a href="Raiju.html" data-ghost="raiju">Raiju</a></li>
+                        <li><a href="Moroi.html" data-ghost="moroi">Moroi</a></li>
+                    </ul>
+                    <ul class="ghost-list">
+                        <li><a href="Wraith.html" data-ghost="wraith">Wraith</a></li>
+                        <li><a href="Banshee.html" data-ghost="banshee">Banshee</a></li>
+                        <li><a href="Revenant.html" data-ghost="revenant">Revenant</a></li>
+                        <li><a href="Yurei.html" data-ghost="yurei">Yurei</a></li>
+                        <li><a href="Hantu.html" data-ghost="hantu">Hantu</a></li>
+                        <li><a href="Onryo.html" data-ghost="onryo">Onryo</a></li>
+                        <li><a href="Obake.html" data-ghost="obake">Obake</a></li>
+                        <li><a href="Deogen.html" data-ghost="deogen">Deogen</a></li>
+                    </ul>
+                    <ul class="ghost-list">
+                        <li><a href="Phantom.html" data-ghost="phantom">Phantom</a></li>
+                        <li><a href="Jinn.html" data-ghost="jinn">Jinn</a></li>
+                        <li><a href="Shade.html" data-ghost="shade">Shade</a></li>
+                        <li><a href="Oni.html" data-ghost="oni">Oni</a></li>
+                        <li><a href="Goryo.html" data-ghost="goryo">Goryo</a></li>
+                        <li><a href="TheMimic.html" data-ghost="the-mimic">The Mimic</a></li>
+                        <li><a href="TheTwins.html" data-ghost="the-twins">The Twins</a></li>
+                        <li><a href="Thaye.html" data-ghost="thaye">Thaye</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="back-button">
+    <a href="../../index.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

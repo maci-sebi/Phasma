@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Paw (Opičí tlapa)</title>
+    <link rel="stylesheet" href="../../style/style-cursed-objects.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+    <script src="../../scripts/lightning.js"></script>
+</head>
+<body>
+  <div class="search-container">
+    <div class="search-panel">
+        <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+        <button onclick="search()">Hledat</button>
+        <div id="search-results"></div>
+    </div>
+    <div class="search-arrow">▼</div>
+</div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+</div>
+    </nav>
+    <div class="vse">
+        <header>
+            <h1>Opičí tlapa (Monkey Paw)</h1>
+        </header>
+        <main class="mirror-main">
+            <img src="../../images/Monkey_Paw.webp" alt="Opičí tlapa" class="mirror-img" style="max-width:220px;display:block;margin:30px auto;">
+            <section class="mirror-info" style="max-width:600px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Monkey Paw má v každé hře šanci 1 ku 7, že bude vybrána jako prokletý předmět, který se objeví na běžné obtížnosti (kromě Insanity). Každá mapa má jedno konkrétní místo, kde se Monkey Paw může objevit. Monkey Paw umožňuje splnit určitý počet přání podle násobitele odměny za obtížnost:<br><br>
+                    <li>0x – 1x: 5 přání</li>
+                    <li>1,01x – 2x: 4 přání</li>
+                    <li>2,01x a více: 3 přání</li><br><br>
+                    Monkey Paw lze použít pouze v oblasti vyšetřování a hráči mohou přání vyslovit buď hlasovým chatem, nebo pomocí textového rozhraní.<br><br>
+                    Pokud používáš hlasový chat, Monkey Paw splní jakékoli rozpoznané přání, které hráč vysloví.
+                    Pokud používáš textové rozhraní, rozhraní se objeví po stisknutí klávesy pro hlavní použití. Hráč si pak může vybrat jednu ze tří kategorií, následně konkrétní přání, nebo rozhraní zavřít opětovným stisknutím klávesy pro hlavní použití.<br><br>
+                    Každé přání má i negativní vedlejší efekt, jehož závažnost závisí na konkrétním přání.<br><br>
+                    Pokud Monkey Paw rozpozná platnou frázi (ať už je to platné přání nebo ne), nebo při vstupu/výstupu z oblasti vyšetřování, její prsty škubnou. Když je přání splněno, jeden z prstů se ohne. Jakmile jsou všechny prsty ohnuté, Monkey Paw už nelze použít.<br><br>
+                </p>
+            </section>
+            <table class="monkeypaw-table">
+  <thead>
+    <tr>
+      <th>Kategorie</th>
+      <th>Přání</th>
+      <th>Efekt</th>
+      <th>Sunny Meadows – místa přání</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><b>Duch</b></td>
+      <td>
+        <ul>
+          <li>I wish to see the ghost</li>
+        </ul>
+      </td>
+      <td>
+        Vyvolá ghost event na aktuální pozici ducha. Po 5 sekundách duch zmizí a začne prokletý hon. Hráčova vize je zahalena tmavou mlhou do konce honu.
+      </td>
+      <td>Manager Office</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I wish for activity</li>
+          <li>I wish the ghost would do something</li>
+        </ul>
+      </td>
+      <td>
+        Zdvojnásobí veškerou aktivitu ducha na 2 minuty (hody, dveře, roaming, schopnosti atd.). Pojistky se trvale rozbijí a východové dveře se na 2 minuty zamknou.
+      </td>
+      <td>Chapel</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I wish the ghost was trapped</li>
+          <li>I wish to trap the ghost</li>
+        </ul>
+      </td>
+      <td>
+        Teleportuje ducha do jeho oblíbené místnosti a zamkne všechny dveře na 1 minutu. Duch nemůže honit, roamingovat ani používat schopnosti. Po minutě se dveře odemknou a začne standardní hon (25% šance na odemčení dveří až po této době).
+      </td>
+      <td>Female Dorm Room</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><b>Hráč</b></td>
+      <td>
+        <ul>
+          <li>I wish for sanity</li>
+          <li>I wish to be sane</li>
+        </ul>
+      </td>
+      <td>
+        Nastaví všem hráčům 50% sanity. Pasivní úbytek sanity se zvýší 1,5× do konce hry. Oblíbená místnost ducha se změní na náhodnou.
+      </td>
+      <td>Kitchen</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I wish to be safe</li>
+        </ul>
+      </td>
+      <td>
+        Odemkne nejbližší zablokovaný úkryt. Světla v aktuální místnosti hráče prasknou a duch bude po zbytek hry slyšet hráče a jejich elektroniku na libovolnou vzdálenost.
+      </td>
+      <td>Matron Office 1</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I wish to leave</li>
+        </ul>
+      </td>
+      <td>
+        Odemkne všechny východové dveře (i během honu). Hráčova rychlost se na 5 sekund sníží a vize bude rozmazaná.
+      </td>
+      <td>Hospital Wing</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>Jiné</b></td>
+      <td>
+        <ul>
+          <li>I wish for life</li>
+          <li>I wish to revive my friend</li>
+        </ul>
+      </td>
+      <td>
+        Oživí náhodného mrtvého hráče s 50% šancí, že zemře hráč, který přání vyslovil. Nelze použít, pokud nikdo není mrtvý.
+      </td>
+      <td>Classroom</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I wish for knowledge</li>
+        </ul>
+      </td>
+      <td>
+        Odstraní jednu nesprávnou stopu a její typy ducha z deníku. Duch se teleportuje k hráči a začne prokletý hon. Hráčova vize je zahalena tmou a sluch je utlumen do smrti nebo konce hry.
+      </td>
+      <td>Restricted Area</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>Počasí / cokoliv</b></td>
+      <td>
+        <ul>
+          <li>I wish for [weather]</li>
+          <ul>
+            <li>Clear Sky</li>
+            <li>Fog</li>
+            <li>Rain</li>
+            <li>Snow</li>
+            <li>Sunrise</li>
+          </ul>
+        </ul>
+      </td>
+      <td>
+        Změní počasí dle přání. Všichni hráči budou dočasně oslepeni a hráč přijde o 25% sanity. Přání na déšť má 50% šanci na lehký nebo silný déšť. Nelze použít, pokud má hráč méně než 25% sanity.
+      </td>
+      <td>Morgue</td>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>I wish for anything</li>
+        </ul>
+      </td>
+      <td>
+        Náhodně splní jedno z ostatních (nepoužitých) přání výše.
+      </td>
+      <td>Waiting Room</td>
+    </tr>
+  </tbody>
+</table>
+        </main>
+    </div>
+</body>
+<div class="back-button">
+  <a href="../cursed_objects/home-cursed-objects.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>

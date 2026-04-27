@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrací skříňka (Music Box)</title>
+    <link rel="stylesheet" href="../../style/style-cursed-objects.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+    <script src="../../scripts/lightning.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..." onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+    <div class="rain"></div>
+    <div class="rain"></div><nav class="sidebar">
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mě.html">O mně</a>
+        <a href="../../html/needed/pravidla.html">Právní info</a>
+         <div class="sidebar-buttons">
+    <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+        <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+    </a>
+    <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+        <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+    </a>
+    <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+        <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+    </a>
+</div>
+    </nav>
+    <div class="vse">
+        <header>
+            <h1>Hrací skříňka (Music Box)</h1>
+        </header>
+        <main class="mirror-main">
+            <img src="../../images/musicbox.png" alt="Hrací skříňka" class="mirror-img" style="max-width:220px;display:block;margin:30px auto;">
+            <section class="mirror-info" style="max-width:600px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Hrací skříňka má v každé hře šanci 1 ku 7, že bude vybrána jako prokletý předmět, který se objeví na jednom konkrétním místě na mapě.
+                </p>
+                <br><br>
+                <h2>Aktivace a použití</h2>
+                <p>Po sebrání se hrací skříňka otevře (to ale ještě neznamená, že byla aktivována). Skříňku lze aktivovat klávesou pro hlavní použití. Tímto se případně ukončí fáze přípravy, pokud ještě probíhá. Hrací skříňku nelze aktivovat během honu a lze ji použít pouze jednou.</p><br><br>
+                <p>Po aktivaci, pokud je duch do 20 metrů od hrací skříňky, začne zpívat spolu s hudbou a tím prozradí svou aktuální polohu, i když zůstává neviditelný.</p><br><br>
+                <p>Pokud je hrací skříňka do 5 metrů od ducha, spustí se událost ducha, při které se duch zhmotní a začne kráčet ke skříňce. Hrací skříňku lze držet v ruce nebo položit na zem – druhá možnost je jediný bezpečný způsob, jak se skříňky zbavit, aniž by došlo k prokletému honu před událostí ducha. Ve všech případech se skříňka po dohrání melodie zavře.</p><br><br>
+                <h2>Prokletý hon</h2>
+                <p>Během používání hrací skříňky dojde ke spuštění prokletého honu, pokud nastane některá z těchto situací:
+                    <li>Duch je velmi blízko hráče, který drží skříňku</li>
+                    <li>Duch během události vyvolané skříňkou kráčí déle než 5 sekund</li>
+                    <li>Skříňka je odhozena během hraní melodie</li>
+                    <li>Hráč dosáhne nebo už má 0 % příčetnosti (v současnosti je zde chyba, kdy se spustí prokletý hon bez 20sekundové prodlevy a bez prodloužení dalších honů)</li>
+                    <br><br>
+                    Vyhnutím se výše uvedeným situacím je možné použít hrací skříňku, aniž by došlo k honu:
+                    <li>Zajistěte, aby nikdo nebyl v oblasti vyšetřování, když by k tomu mohlo dojít (budoucí hony budou prodlouženy, pokud by rozbití skříňky způsobilo prokletý hon)</li>
+                    <li>Pokud hudba dohraje a duch se nikdy nepřiblíží dostatečně blízko, skříňka se automaticky zavře</li>
+                    <li>Pokud hráč přinese skříňku k duchovi těsně před koncem melodie, duch jednoduše zmizí, když hudba skončí</li>
+                    <br><br>
+                    Během hraní hudby může duch stále zahájit běžný hon, pokud jsou splněny běžné podmínky – v takovém případě jde o standardní hon, ne prokletý.
+                </p>
+                <h2>Další efekty</h2>
+                <p>Pokud je hráč do 3 metrů od aktivní hrací skříňky, jeho příčetnost klesá rychlostí 2,6 % za sekundu, což při poslechu celé melodie znamená celkem 77 %. Toto platí pro všechny hráče v dosahu, bez ohledu na to, kdo skříňku aktivoval.</p><br><br>
+                <p>Dokud nedojde k události ducha vyvolané skříňkou, aktivní hrací skříňka nebrání běžné aktivitě ducha – duch se může volně pohybovat, interagovat s předměty, používat své schopnosti nebo provádět běžné události a hony. Pokud je skříňka mimo dosah ducha, duch k ní nebude aktivně chodit, ale může se k ní náhodně přiblížit a tím spustit událost.</p><br><br>
+                <p>Pokud je hrací skříňka vynesena ven, skříňka se zavře. Pokud hudba stále hraje, odčerpávání příčetnosti se pozastaví, ale hudba technicky pokračuje. Po návratu dovnitř bude skříňka opět fungovat normálně.</p>
+            </section>
+        </main>
+    </div>
+</body>
+<div class="back-button">
+   <a href="../cursed_objects/home-cursed-objects.html">Zpět</a>
+</div>
+</body>
+<footer>
+    © 2025 Phasma. Všechna práva vyhrazena.
+</footer>
+</html>
