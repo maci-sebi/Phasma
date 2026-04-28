@@ -2,8 +2,6 @@
 
 Vítejte na **Phasma** - kompletní příručce a tutoriálu pro všechny lovce duchů ve hře **Phasmophobia**!
 
-![Phasmophobia Logo](images/Phasmophobia-Logo.png)
-
 ## O projektu
 
 Tato webová stránka je navržena jako **interaktivní příručka** pro hráče Phasmophobia. Najdete zde všechny informace potřebné k úspěšnému lovu duchů:
