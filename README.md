@@ -19,27 +19,27 @@ Tato webová stránka je navržena jako **interaktivní příručka** pro hráč
  **Temný design** - pohodlné čtení s efekty deště a blesků
  **Česká lokalizace** - obsah zcela v češtině
 
-##  Struktura projektu
-Phasma/ 
-├── index.html 
-# Domovská stránka 
-├── style/ 
-│ └── style.css # Hlavní stylování 
-├── scripts/ 
-# Efekt padajícího deště 
-├── rain.js  
-├── html/  
-      # Stránky o duších 
-      ├── ghosts/
-      # Stránky o mapách 
-      ├── maps/
-      # Prokleté předměty 
-      ├── cursed_objects/
-      # Další stránky 
-      └── needed/ 
-# Vlastní fonty 
-├── fonts/ 
-# Zvukové efekty 
-├── audio/
-# Obrázky a ikony
-└── images/ 
+## Popis struktur
+
+### Hlavní soubor
+- **index.html** - Domovská stránka projektu s uvítáním a navigací
+
+### Styly
+- **style/** - Složka se všemi CSS soubory
+  - `style.css` - Hlavní stylování celého projektu
+
+### Skripty
+- **scripts/** - Složka s JavaScriptovými soubory
+  - `rain.js` - Vytváří efekt padajícího deště
+
+### HTML Stránky
+- **html/** - Složka se všemi podstránkami
+  - **ghosts/** - Kategorie o duších
+  - **maps/** - Kategorie o mapách
+  - **cursed_objects/** - Kategorie o prokletých předmětech
+  - **needed/** - Pomocné stránky (Kontakt, O hře, O mně, Pravidla)
+
+### Další složky
+- **fonts/** - Vlastní webové fonty
+- **audio/** - Zvukové efekty a audio soubory
+- **images/** - Obrázky, ikony a loga
