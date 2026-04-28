@@ -1,4 +1,4 @@
-# 👻 Phasma - Příručka pro Phasmophobia
+# Phasma - Příručka pro lovce duchů
 
 Vítejte na **Phasma** - kompletní příručce a tutoriálu pro všechny lovce duchů ve hře **Phasmophobia**!
 
