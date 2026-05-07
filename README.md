@@ -14,7 +14,7 @@ Tato webová stránka je navržena jako **interaktivní příručka** pro hráč
 ##  Hlavní funkce
 
  **Integrované vyhledávání** - rychle najděte informace o duších, mapách nebo předmětech
- **Temný design** - pohodlné čtení s efekty deště a blesků
+ **Temný design** - pohodlné čtení s efekty deště
  **Česká lokalizace** - obsah zcela v češtině
 
 ## Popis struktur
