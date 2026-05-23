@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style-needed.css">
+    <link rel="icon" href="..\..\images\Spirit.webp">
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+<div class="rain"></div>
+
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
+                    alt="sidebar-logo"></a>
+        </div>
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/equipment/home-equipment.html">Vybavení</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mně.html">O mně</a>
+        <div class="sidebar-buttons">
+            <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+            </a>
+            <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+                <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+            </a>
+            <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+                <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+            </a>
+        </div>
+    </nav>
+    </div>
+    <main class="paragraf" style="max-width:700px;margin:0 auto;padding-bottom: 50px;">
+        <header>
+            <h1>Kontakt</h1>
+        </header>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
+
+            <div style="flex: 1.5; min-width: 300px;" class="contact-form-container">
+                <h2>Napište nám</h2>
+                <form action="kontakt.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Jméno</label>
+                        <input type="text" id="name" name="name" required placeholder="Vaše jméno">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="Váš e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Předmět</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Předmět zprávy">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Zpráva</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Napište svou zprávu sem..."></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Odeslat zprávu</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="pravidla.html">Právní info</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>O mně - Sebastian Macálka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style-needed.css">
+    <link rel="icon" href="..\..\images\Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+
+<body>
+    <div class="rain"></div>
+
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..."
+                onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
+                    alt="sidebar-logo"></a>
+        </div>
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/equipment/home-equipment.html">Vybavení</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mně.html">O mně</a>
+        <div class="sidebar-buttons">
+            <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+            </a>
+            <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+                <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+            </a>
+            <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+                <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+            </a>
+        </div>
+    </nav>
+
+    <main class="paragraf"
+        style="max-width:900px; margin:0 auto; padding-left: 10%; padding-right: 2%; padding-bottom: 50px;">
+        <header style="margin-top: 50px; text-align: center;">
+            <h1>O mně</h1>
+        </header>
+
+        <div class="grid-2-col" style="margin-top: 40px;">
+            <!-- Investigator ID Dossier -->
+            <div class="investigator-file">
+                <h3
+                    style="color: #ffbb00; margin-top: 0; text-align: center; border-bottom: 1px dashed #ffbb00; padding-bottom: 10px;">
+                    SLUŽEBNÍ PRŮKAZ VYŠETŘOVATELE</h3>
+                <table>
+                    <tr>
+                        <td class="label">Jméno:</td>
+                        <td>Sebastian Macálka</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Příslušnost:</td>
+                        <td>SŠTE Olomoucká Brno</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Specializace:</td>
+                        <td>Vývoj webových aplikací / Lovec duchů</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Zájmy:</td>
+                        <td>Phasmophobia, Programování, Hororové hry</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Oblíbený duch:</td>
+                        <td><span class="badge" style="color: #ff5555; border-color: #ff5555;">Demon</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Oblíbená mapa:</td>
+                        <td><span class="badge">6 Tanglewood Drive</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- About Text -->
+            <div class="info-card" style="margin-bottom: 0;">
+                <h2>Příběh projektu</h2>
+                <p>
+                    Vítejte na mé stránce! Jmenuji se <strong>Sebastian Macálka</strong> a jsem studentem na
+                    <strong>SŠTE Olomoucká v Brně</strong>.
+                </p>
+                <p>
+                    Tento web vznikl jako školní/ročníková práce inspirovaná mou oblíbenou kooperativní hrou
+                    <strong>Phasmophobia</strong>. Chtěl jsem vytvořit něco, co bude nejen užitečné pro ostatní lovce
+                    duchů, ale zároveň bude dýchat tou pravou tajemnou atmosférou, kterou zažíváte v samotné hře.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project Goals Card -->
+        <div class="info-card" style="margin-top: 30px;">
+            <h3>Cíle a zpracování projektu</h3>
+            <p>
+                Při návrhu a realizaci tohoto průvodce jsem se zaměřil na několik zásadních bodů:
+            </p>
+            <ul class="category-list">
+                <li><strong>Herní atmosféra:</strong> Použití typického písma <em>"Bohemian Typewriter"</em>, tmavého
+                    rozhraní, animovaného deště a bouřky k simulaci vyšetřovacího prostředí.</li>
+                <li><strong>Strukturovaná databáze:</strong> Přehledné rozdělení všech 24 duchů, herních map a
+                    kompletního vybavení s detailním popisem jednotlivých úrovní (Tiers).</li>
+                <li><strong>Interaktivita:</strong> Přidání interaktivního evidence checklistu pro rychlé vyřazování
+                    duchů během hraní a funkční lokální vyhledávání.</li>
+                <li><strong>Responzivita:</strong> Optimalizace vzhledu stránek tak, aby se pohodlně četly na počítači i
+                    na mobilním telefonu při hraní.</li>
+            </ul>
+        </div>
+
+        <div class="info-card" style="margin-top: 30px; text-align: center;">
+            <p style="margin: 0; font-size: 1.1em; font-style: italic; color: #ffcc00;">
+                "Děkuji vám za návštěvu tohoto webu. Doufám, že vám moje příručka usnadní vyšetřování a duchové z vás
+                budou mít konečně strach!"
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="pravidla.html">Právní info</a>
+    </footer>
+</body>
+
+</html>

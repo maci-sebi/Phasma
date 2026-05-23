@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvukový senzor (Sound Sensor)</title>
+    <link rel="stylesheet" href="../../style/style-equipment.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+
+<body>
+    <div class="rain"></div>
+
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..."
+                onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
+                    alt="sidebar-logo"></a>
+        </div>
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/equipment/home-equipment.html">Vybavení</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mně.html">O mně</a>
+        <div class="sidebar-buttons">
+            <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+            </a>
+            <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+                <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+            </a>
+            <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+                <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+            </a>
+        </div>
+    </nav>
+
+    <div class="vse">
+        <header style="margin-top: 50px;">
+            <h1>Zvukový senzor (Sound Sensor)</h1>
+        </header>
+
+        <main class="mirror-main">
+            <section class="mirror-info" style="max-width:800px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Zvukový senzor naslouchá zvukům v určitém okruhu. Údaje o hlasitosti a přítomnosti zvuku přenáší do
+                    dodávky na speciální audio panel.
+                </p>
+            </section>
+
+            <section class="tiers-section" style="margin-top: 40px; padding-bottom: 50px;">
+                <h2 style="text-align: center; color: #ffcc00; margin-bottom: 30px;">Úrovně vybavení (Tiers)</h2>
+                <div class="tier-container">
+                    <!-- Tier I -->
+                    <div class="tier-box">
+                        <h3>Tier I</h3>
+                        <img src="../../images/equipment/ssensor1.webp" alt="Tier I Zvukový senzor">
+                        <p>Základní mikrofon. Snímá zvuky v malém kruhovém okruhu kolem místa instalace.</p>
+                    </div>
+
+                    <!-- Tier II -->
+                    <div class="tier-box">
+                        <h3>Tier II</h3>
+                        <img src="../../images/equipment/ssensor2.webp" alt="Tier II Zvukový senzor">
+                        <p>Pokročilý senzor. Větší dosah snímání a možnost v dodávce přepínat tvar detekční zóny (např.
+                            kužel místo kruhu).</p>
+                    </div>
+
+                    <!-- Tier III -->
+                    <div class="tier-box">
+                        <h3>Tier III</h3>
+                        <img src="../../images/equipment/ssensor3.webp" alt="Tier III Zvukový senzor">
+                        <p>Prostorový senzor. Obrovský dosah snímání, možnost přepínat mezi 4 různými směrovými
+                            charakteristikami.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="back-button">
+        <a href="home-equipment.html">Zpět</a>
+    </div>
+
+    <footer>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="../needed/pravidla.html">Právní info</a>
+    </footer>
+</body>
+
+</html>

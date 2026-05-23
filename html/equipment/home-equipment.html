@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasmofobia - Vybavení</title>
+    <link rel="stylesheet" href="../../style/style-equipment.css">
+    <link rel="icon" href="..\..\images\Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+
+<body>
+    <div class="rain"></div>
+
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..."
+                onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
+                    alt="sidebar-logo"></a>
+        </div>
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/equipment/home-equipment.html">Vybavení</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mně.html">O mně</a>
+        <div class="sidebar-buttons">
+            <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+            </a>
+            <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+                <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+            </a>
+            <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+                <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+            </a>
+        </div>
+    </nav>
+
+    <div class="vse">
+        <header style="margin-top: 50px;">
+            <h1>VYBAVENÍ</h1>
+            <p style="text-align: center; max-width: 600px; margin: 10px auto; line-height: 1.6;">
+                Prozkoumejte všechny lovecké nástroje dostupné ve hře Phasmophobia. Každý předmět má své unikátní
+                vlastnosti a tři úrovně vylepšení (Tiers).
+            </p>
+        </header>
+
+        <main>
+            <div class="equipment-grid">
+                <!-- Crucifix -->
+                <a href="crucifix.html" class="equipment-item">
+                    <img src="../../images/equipment/cru1.webp" alt="Krucifix">
+                    <span>Krucifix</span>
+                    <small>Crucifix</small>
+                </a>
+
+                <!-- D.O.T.S. -->
+                <a href="dots.html" class="equipment-item">
+                    <img src="../../images/equipment/dots1.webp" alt="D.O.T.S. Projektor">
+                    <span>D.O.T.S. Projektor</span>
+                    <small>D.O.T.S. Projector</small>
+                </a>
+
+                <!-- EMF Reader -->
+                <a href="emf.html" class="equipment-item">
+                    <img src="../../images/equipment/emf1.webp" alt="EMF Detektor">
+                    <span>EMF Čtečka</span>
+                    <small>EMF Reader</small>
+                </a>
+
+                <!-- Firelight -->
+                <a href="firelight.html" class="equipment-item">
+                    <img src="../../images/equipment/fire1.webp" alt="Svíčka / Světlo">
+                    <span>Svíčka (Světlo)</span>
+                    <small>Firelight</small>
+                </a>
+
+                <!-- Flashlight -->
+                <a href="flashlight.html" class="equipment-item">
+                    <img src="../../images/equipment/flash1.webp" alt="Baterka">
+                    <span>Baterka</span>
+                    <small>Flashlight</small>
+                </a>
+
+                <!-- Ghost Writing Book -->
+                <a href="ghostbook.html" class="equipment-item">
+                    <img src="../../images/equipment/book1.webp" alt="Kniha duchů">
+                    <span>Kniha duchů</span>
+                    <small>Ghost Writing Book</small>
+                </a>
+
+                <!-- Head Gear -->
+                <a href="headgear.html" class="equipment-item">
+                    <img src="../../images/equipment/head1.webp" alt="Kamera na hlavu">
+                    <span>Kamera na hlavu</span>
+                    <small>Head Gear</small>
+                </a>
+
+                <!-- Igniter -->
+                <a href="ignighter.html" class="equipment-item">
+                    <img src="../../images/equipment/ign1.webp" alt="Zapalovač">
+                    <span>Zapalovač</span>
+                    <small>Igniter</small>
+                </a>
+
+                <!-- Incense -->
+                <a href="incense.html" class="equipment-item">
+                    <img src="../../images/equipment/insence1.webp" alt="Kouřidlo">
+                    <span>Kouřidlo</span>
+                    <small>Incense</small>
+                </a>
+
+                <!-- Motion Sensor -->
+                <a href="motionsensor.html" class="equipment-item">
+                    <img src="../../images/equipment/msensor1.webp" alt="Pohybový senzor">
+                    <span>Pohybový senzor</span>
+                    <small>Motion Sensor</small>
+                </a>
+
+                <!-- Photo Camera -->
+                <a href="photocam.html" class="equipment-item">
+                    <img src="../../images/equipment/photo1.webp" alt="Fotoaparát">
+                    <span>Fotoaparát</span>
+                    <small>Photo Camera</small>
+                </a>
+
+                <!-- Parabolic Mic -->
+                <a href="pmic.html" class="equipment-item">
+                    <img src="../../images/equipment/pmic1.webp" alt="Parabolický mikrofon">
+                    <span>Parabolický mikrofon</span>
+                    <small>Parabolic Microphone</small>
+                </a>
+
+                <!-- Salt -->
+                <a href="salt.html" class="equipment-item">
+                    <img src="../../images/equipment/sul1.webp" alt="Sůl">
+                    <span>Sůl</span>
+                    <small>Salt</small>
+                </a>
+
+                <!-- Sanity Medication -->
+                <a href="sanitymed.html" class="equipment-item">
+                    <img src="../../images/equipment/smed1.webp" alt="Léky na příčetnost">
+                    <span>Léky na příčetnost</span>
+                    <small>Sanity Medication</small>
+                </a>
+
+                <!-- Sound Recorder -->
+                <a href="soundrec.html" class="equipment-item">
+                    <img src="../../images/equipment/soundrec1.webp" alt="Záznamník zvuku">
+                    <span>Záznamník zvuku</span>
+                    <small>Sound Recorder</small>
+                </a>
+
+                <!-- Sound Sensor -->
+                <a href="soundsens.html" class="equipment-item">
+                    <img src="../../images/equipment/ssensor1.webp" alt="Zvukový senzor">
+                    <span>Zvukový senzor</span>
+                    <small>Sound Sensor</small>
+                </a>
+
+                <!-- Spirit Box -->
+                <a href="spiritbox.html" class="equipment-item">
+                    <img src="../../images/equipment/sbox1.webp" alt="Spirit Box">
+                    <span>Spirit Box</span>
+                    <small>Spirit Box</small>
+                </a>
+
+                <!-- Thermometer -->
+                <a href="thrmometr.html" class="equipment-item">
+                    <img src="../../images/equipment/teplo1.webp" alt="Teploměr">
+                    <span>Teploměr</span>
+                    <small>Thermometer</small>
+                </a>
+
+                <!-- Tripod -->
+                <a href="tripod.html" class="equipment-item">
+                    <img src="../../images/equipment/tripod1.webp" alt="Stativ">
+                    <span>Stativ (Tripod)</span>
+                    <small>Tripod</small>
+                </a>
+
+                <!-- UV Light -->
+                <a href="uv.html" class="equipment-item">
+                    <img src="../../images/equipment/uv1.webp" alt="UV Světlo">
+                    <span>UV Světlo</span>
+                    <small>UV Light</small>
+                </a>
+
+                <!-- Video Camera -->
+                <a href="videocam.html" class="equipment-item">
+                    <img src="../../images/equipment/cam1.webp" alt="Videokamera">
+                    <span>Videokamera</span>
+                    <small>Video Camera</small>
+                </a>
+            </div>
+        </main>
+    </div>
+    <footer>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="../needed/pravidla.html">Právní info</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <title>O hře - Phasmophobia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style-needed.css">
+    <link rel="icon" href="..\..\images\Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+
+<body>
+    <div class="rain"></div>
+
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..."
+                onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
+                    alt="sidebar-logo"></a>
+        </div>
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/equipment/home-equipment.html">Vybavení</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mně.html">O mně</a>
+        <div class="sidebar-buttons">
+            <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+            </a>
+            <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+                <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+            </a>
+            <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+                <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+            </a>
+        </div>
+    </nav>
+
+    <main class="paragraf"
+        style="max-width:900px; margin:0 auto; padding-left: 10%; padding-right: 2%; padding-bottom: 50px;">
+        <header style="margin-top: 50px; text-align: center;">
+            <h1>O hře</h1>
+        </header>
+
+        <!-- Intro Grid -->
+        <div class="grid-2-col" style="margin-top: 40px;">
+            <div class="info-card" style="margin-bottom: 0;">
+                <h2>Představení</h2>
+                <p>
+                    <strong>Phasmophobia</strong> je kooperativní psychologický horor s detektivními prvky, vyvinutý a
+                    vydaný nezávislým studiem <strong>Kinetic Games</strong>.
+                </p>
+                <p>
+                    Hra vyšla v předběžném přístupu (Early Access) v září 2020 a okamžitě se stala celosvětovým
+                    fenoménem. Hráči se ujímají rolí profesionálních vyšetřovatelů paranormálních jevů vysílaných na
+                    strašidelná místa, kde sbírají důkazy a čelí nebezpečným entitám.
+                </p>
+            </div>
+
+            <div class="investigator-file">
+                <h3
+                    style="color: #ffbb00; margin-top: 0; text-align: center; border-bottom: 1px dashed #ffbb00; padding-bottom: 10px;">
+                    ZÁKLADNÍ DOKUMENTACE</h3>
+                <table>
+                    <tr>
+                        <td class="label">Žánr:</td>
+                        <td>Kooperativní horor / Detektivní</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Vývojář:</td>
+                        <td>Kinetic Games</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Vydání:</td>
+                        <td>Září 2020 (Předběžný přístup)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Hráči:</td>
+                        <td>1 - 4 (Online kooperace)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Platformy:</td>
+                        <td>
+                            <span class="badge">PC</span>
+                            <span class="badge">VR</span>
+                            <span class="badge">PS5 / PS VR2</span>
+                            <span class="badge">Xbox Series X/S</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Gameplay Mechanics -->
+        <h2 class="section-title"
+            style="display: block; text-align: center; max-width: 300px; margin: 40px auto 20px auto;">Herní Mechaniky
+        </h2>
+
+        <div class="grid-2-col">
+            <div class="info-card" style="margin-bottom: 0;">
+                <h3>Vyšetřování & Důkazy</h3>
+                <p>
+                    Hlavním cílem hry není boj, ale sbírání informací. Hráči prohledávají místa, jako jsou rodinné domy,
+                    staré školy, kempy nebo psychiatrické léčebny, za účelem nalezení 3 klíčových důkazů (např. EMF
+                    Level 5, otisky, teplota pod bodem mrazu). Tyto důkazy následně zaznamenají do deníku a určí typ
+                    ducha.
+                </p>
+            </div>
+
+            <div class="info-card" style="margin-bottom: 0;">
+                <h3>Příčetnost (Sanity)</h3>
+                <p>
+                    Váš nejdůležitější ukazatel. Pobyt ve tmě, pozorování paranormálních aktivit nebo používání
+                    prokletých předmětů snižuje úroveň vaší příčetnosti. Jakmile klesne příčetnost týmu pod určitou mez
+                    (typicky 50 %), duch se stává agresivním a může zahájit aktivní lov.
+                </p>
+            </div>
+        </div>
+
+        <div class="info-card" style="margin-top: 30px;">
+            <h3>Fáze lovu (The Hunt)</h3>
+            <p>
+                Když duch zahájí lov, všechny vchodové dveře se uzamknou a světla začnou blikat. Elektronika v rukou
+                hráčů (včetně baterek a kamer) začne šumět a přitahovat ducha. Jedinou možností přežití je okamžité
+                zhasnutí elektroniky, zachování absolutního ticha (duch vás slyší přes mikrofon!) a schování se do
+                skříní či za překážky.
+            </p>
+        </div>
+
+        <!-- Equipment categories summary -->
+        <h2 class="section-title"
+            style="display: block; text-align: center; max-width: 300px; margin: 40px auto 20px auto;">Výbava Lovce</h2>
+
+        <div class="info-card">
+            <p style="margin-top: 0;">
+                K úspěšnému dokončení vyšetřování mají hráči k dispozici širokou škálu vybavení rozdělenou do několika
+                kategorií. Každé vybavení lze navíc vylepšit ve třech úrovních (Tiers):
+            </p>
+            <div class="grid-2-col" style="margin-top: 20px; gap: 20px;">
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🛠️ Detekční & Vyšetřovací</h4>
+                    <ul class="category-list">
+                        <li>EMF čtečka, Spirit Box, D.O.T.S. Projektor</li>
+                        <li>Kniha duchů, UV světlo, Teploměr</li>
+                        <li>Videokamery a fotoaparáty</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🛡️ Obranné & Podpůrné</h4>
+                    <ul class="category-list">
+                        <li>Krucifixy (zabrání zahájení lovu)</li>
+                        <li>Kouřidla (kadidla k oslepení ducha)</li>
+                        <li>Léky na sanitu, stativy, čelovky</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 0; margin-top: 20px; font-weight: bold;">
+                <a href="../equipment/home-equipment.html" style="color: #ffcc00; text-decoration: underline;">Kompletní
+                    přehled a srovnání úrovní vybavení naleznete zde ➔</a>
+            </p>
+        </div>
+
+        <!-- Cursed Objects summary -->
+        <h2 class="section-title"
+            style="display: block; text-align: center; max-width: 350px; margin: 40px auto 20px auto;">Prokleté Předměty
+        </h2>
+
+        <div class="info-card">
+            <p style="margin-top: 0;">
+                Prokleté předměty jsou nebezpečné artefakty rozmístěné po mapě. Výměnou za vaši příčetnost vám mohou
+                poskytnout obrovské výhody při lokalizaci ducha, ale jejich nesprávné použití okamžitě spouští
+                nebezpečný prokletý lov (Cursed Hunt):
+            </p>
+            <div class="grid-2-col" style="margin-top: 20px; gap: 20px;">
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🔮 Mentální & Vizuální</h4>
+                    <ul class="category-list">
+                        <li><strong>Opičí tlapa</strong> (Monkey Paw) – plní přání za cenu vedlejších efektů</li>
+                        <li><strong>Hrací skříňka</strong> (Music Box) – duch začne zpívat a odhalí se</li>
+                        <li><strong>Prokleté zrcadlo</strong> (Haunted Mirror) – pohled do pokoje ducha</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🕯️ Vyvolávací & Interaktivní</h4>
+                    <ul class="category-list">
+                        <li><strong>Tarotové karty</strong> – 10 náhodných karet (oživující, zabijácké atd.)</li>
+                        <li><strong>Ouija deska</strong> – přímá komunikace s duchem přes otázky</li>
+                        <li><strong>Voodoo panenka</strong> & <strong>Vyvolávací kruh</strong> – interakce a zhmotnění
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 0; margin-top: 20px; font-weight: bold;">
+                <a href="../cursed_objects/home-cursed-objects.html"
+                    style="color: #ffcc00; text-decoration: underline;">Kompletní
+                    přehled prokletých předmětů naleznete zde ➔</a>
+            </p>
+        </div>
+
+        <!-- Ghosts summary -->
+        <h2 class="section-title"
+            style="display: block; text-align: center; max-width: 300px; margin: 40px auto 20px auto;">Typy Duchů</h2>
+
+        <div class="info-card">
+            <p style="margin-top: 0;">
+                Ve hře se nachází 24 různých typů duchů. Každý má své unikátní chování, silné a slabé stránky, které
+                musíte během vyšetřování odhalit na základě tří získaných důkazů:
+            </p>
+            <div class="grid-2-col" style="margin-top: 20px; gap: 20px;">
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🔥 Agresivní & Aktivní</h4>
+                    <ul class="category-list">
+                        <li><strong>Demon:</strong> Může začít lovit kdykoliv, bez ohledu na sanitu.</li>
+                        <li><strong>Revenant:</strong> Extrémně rychlý, pokud vidí hráče.</li>
+                        <li><strong>Oni:</strong> Velmi aktivní a nebezpečný v blízkosti hráčů.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">👁️ Plíživí & Unikátní</h4>
+                    <ul class="category-list">
+                        <li><strong>Shade:</strong> Velmi plachý duch, neaktivní v přítomnosti týmu.</li>
+                        <li><strong>The Mimic:</strong> Kopíruje chování a důkazy jiných duchů.</li>
+                        <li><strong>Deogen & Moroi:</strong> Speciální mechaniky rychlosti a kletby.</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 0; margin-top: 20px; font-weight: bold;">
+                <a href="../ghosts/home-ghosts.html" style="color: #ffcc00; text-decoration: underline;">Kompletní
+                    přehled a chování duchů naleznete zde ➔</a>
+            </p>
+        </div>
+
+        <!-- Maps summary -->
+        <h2 class="section-title"
+            style="display: block; text-align: center; max-width: 300px; margin: 40px auto 20px auto;">Mapy (Lokace)
+        </h2>
+
+        <div class="info-card">
+            <p style="margin-top: 0;">
+                Vyšetřování probíhá v různých typech budov. Velikost lokace určuje nejen čas potřebný k nalezení ducha,
+                ale i dostupnost úkrytů a spotřebu příčetnosti:
+            </p>
+            <div class="grid-2-col" style="margin-top: 20px; gap: 20px;">
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🏡 Malé lokace (Rodinné domy)</h4>
+                    <ul class="category-list">
+                        <li>Tanglewood Drive, Willow Street, Ridgeview Court, Edgefield Road.</li>
+                        <li>Grafton Farmhouse, Camp Woodwind (malý kemp).</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: #ffcc00; margin-top: 0;">🏫 Střední & Velké (Komplexy)</h4>
+                    <ul class="category-list">
+                        <li><strong>Střední:</strong> Bleasdale Farmhouse, Prison (věznice), Maple Lodge, Point Hope
+                            maják.</li>
+                        <li><strong>Velké:</strong> Brownstone High School, Sunny Meadows (léčebna).</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; margin-bottom: 0; margin-top: 20px; font-weight: bold;">
+                <a href="../maps/home-maps.html" style="color: #ffcc00; text-decoration: underline;">Kompletní
+                    seznam map a taktické plány naleznete zde ➔</a>
+            </p>
+        </div>
+
+        <!-- Features & Interesting Stats -->
+        <div class="grid-2-col" style="margin-top: 30px;">
+            <div class="info-card" style="margin-bottom: 0;">
+                <h2>Hlasová integrace</h2>
+                <p>
+                    Hra využívá pokročilou integraci mikrofonu. Duchové neustále naslouchají – reagují na vyslovení
+                    svého jména, komunikují prostřednictvím Spirit Boxu a během lovu mohou lokalizovat hráče na základě
+                    hluku z mikrofonu.
+                </p>
+            </div>
+
+            <div class="info-card" style="margin-bottom: 0;">
+                <h2>Proč je populární?</h2>
+                <ul class="category-list" style="margin-bottom: 0;">
+                    <li><strong>Společný strach:</strong> Skvěle vyvážený kooperativní zážitek pro skupiny přátel.</li>
+                    <li><strong>Imersivní VR:</strong> Možnost plného ponoření do virtuální reality zvyšuje děsivost na
+                        maximum.</li>
+                    <li><strong>Časté aktualizace:</strong> Vývojáři pravidelně přidávají nové duchy, mapy a mechaniky.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="pravidla.html">Právní info</a>
+    </footer>
+</body>
+
+</html>

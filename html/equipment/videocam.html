@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videokamera (Video Camera)</title>
+    <link rel="stylesheet" href="../../style/style-equipment.css">
+    <link rel="icon" href="../../images/Spirit.webp">
+    <script src="../../scripts/script.js" defer></script>
+    <script src="../../scripts/rain.js" defer></script>
+</head>
+
+<body>
+    <div class="rain"></div>
+
+    <div class="search-container">
+        <div class="search-panel">
+            <input type="text" id="search-input" placeholder="Hledat..."
+                onkeydown="if(event.key === 'Enter') { search(); return false; }">
+            <button onclick="search()">Hledat</button>
+            <div id="search-results"></div>
+        </div>
+        <div class="search-arrow">▼</div>
+    </div>
+
+    <nav class="sidebar">
+        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
+                    alt="sidebar-logo"></a>
+        </div>
+        <a href="../../index.html">Domů</a>
+        <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
+        <a href="../../html/maps/home-maps.html">Mapy</a>
+        <a href="../../html/cursed_objects/home-cursed-objects.html">Prokleté předměty</a>
+        <a href="../../html/equipment/home-equipment.html">Vybavení</a>
+        <a href="../../html/needed/kontakt.html">Kontakt</a>
+        <a href="../../html/needed/o-hře.html">O hře</a>
+        <a href="../../html/needed/o-mně.html">O mně</a>
+        <div class="sidebar-buttons">
+            <a class="btn steam" href="https://store.steampowered.com/app/739630/Phasmophobia/" target="_blank">
+                <img src="../../images/steam.svg" alt="Steam" class="btn-icon"> Get on Steam
+            </a>
+            <a class="btn xbox" href="https://www.xbox.com/cs-CZ/games/store/-/9N6D60SBZN05" target="_blank">
+                <img src="../../images/xbox.png" alt="Xbox" class="btn-icon"> Get on Xbox
+            </a>
+            <a class="btn ps" href="https://store.playstation.com/en-cz/concept/10005673/" target="_blank">
+                <img src="../../images/ps.svg" alt="PS5" class="btn-icon"> <b>Get on PS5</b>
+            </a>
+        </div>
+    </nav>
+
+    <div class="vse">
+        <header style="margin-top: 50px;">
+            <h1>Videokamera (Video Camera)</h1>
+        </header>
+
+        <main class="mirror-main">
+            <section class="mirror-info" style="max-width:800px;margin:0 auto;text-align:center;">
+                <h2>Popis</h2>
+                <p>
+                    Videokamera přenáší živý obraz na monitor v dodávce. Má vestavěný režim nočního vidění, který je
+                    nezbytný k nalezení mlžného oparu (Ghost Orb).
+                </p>
+            </section>
+
+            <section class="tiers-section" style="margin-top: 40px; padding-bottom: 50px;">
+                <h2 style="text-align: center; color: #ffcc00; margin-bottom: 30px;">Úrovně vybavení (Tiers)</h2>
+                <div class="tier-container">
+                    <!-- Tier I -->
+                    <div class="tier-box">
+                        <h3>Tier I</h3>
+                        <img src="../../images/equipment/cam1.webp" alt="Tier I Videokamera">
+                        <p>Stará analogová kamera na kazety. Obraz trpí silným zrněním a zkreslením. Noční vidění má
+                            nízkou kvalitu a malý dosah.</p>
+                    </div>
+
+                    <!-- Tier II -->
+                    <div class="tier-box">
+                        <h3>Tier II</h3>
+                        <img src="../../images/equipment/cam2.webp" alt="Tier II Videokamera">
+                        <p>Digitální HD videokamera. Nabízí čistý obraz s vysokým rozlišením a standardní kvalitu
+                            nočního vidění bez výrazného zrnění.</p>
+                    </div>
+
+                    <!-- Tier III -->
+                    <div class="tier-box">
+                        <h3>Tier III</h3>
+                        <img src="../../images/equipment/cam3.webp" alt="Tier III Videokamera">
+                        <p>Profesionální 4K videokamera. Nabízí dokonalý stabilní obraz a je vysoce odolná vůči
+                            elektromagnetickému rušení při aktivitě ducha.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="back-button">
+        <a href="home-equipment.html">Zpět</a>
+    </div>
+
+    <footer>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="../needed/pravidla.html">Právní info</a>
+    </footer>
+</body>
+
+</html>
