@@ -1,6 +1,6 @@
 <?php
 // Cílová URL adresa - ZDE vlož svůj zkopírovaný odkaz z Discordu
-$target_url = "https://discord.com/api/webhooks/1234567890/ABCDEFG_TADY_BUDE_TVUJ_ZBYTOK_LINKU"; 
+$target_url = "https://discord.com/api/webhooks/1508115434845638657/hyoknygrTcyJ0DJO-E7d9wUUQpFGwf2r9Tv4woxrCNdccKrOcbwfaQw1I2LHAVaoqfap"; 
 
 $success = false;
 $error_message = "";
