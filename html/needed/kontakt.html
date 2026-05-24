@@ -9,12 +9,13 @@
     <link rel="icon" href="..\..\images\Spirit.webp">
     <script src="../../scripts/rain.js" defer></script>
 </head>
-<div class="rain"></div>
 
 <body>
+    <div class="rain"></div>
+
     <nav class="sidebar">
-        <div class="sidebar-logo"><a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png"
-                    alt="sidebar-logo"></a>
+        <div class="sidebar-logo">
+            <a href="../../index.html"><img src="../../images/Phasmophobia-Logo.png" alt="sidebar-logo"></a>
         </div>
         <a href="../../index.html">Domů</a>
         <a href="../../html/ghosts/home-ghosts.html">Duchové</a>
@@ -36,42 +37,103 @@
             </a>
         </div>
     </nav>
-    </div>
-    <main class="paragraf" style="max-width:700px;margin:0 auto;padding-bottom: 50px;">
+
+    <main class="paragraf" style="max-width:700px;margin:0 auto;padding-bottom: 50px; text-align: center;">
         <header>
             <h1>Kontakt</h1>
         </header>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px; justify-content: center;">
 
-            <div style="flex: 1.5; min-width: 300px;" class="contact-form-container">
+            <div style="flex: 1.5; min-width: 300px; max-width: 500px;" class="contact-form-container" id="form-box">
                 <h2>Napište nám</h2>
-                <form action="kontakt.php" method="POST">
-                    <div class="form-group">
+                <form id="discord-form">
+                    <div class="form-group" style="text-align: left;">
                         <label for="name">Jméno</label>
-                        <input type="text" id="name" name="name" required placeholder="Vaše jméno">
+                        <input type="text" id="name" required placeholder="Vaše jméno">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="text-align: left;">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required placeholder="Váš e-mail">
+                        <input type="email" id="email" required placeholder="Váš e-mail">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="text-align: left;">
                         <label for="subject">Předmět</label>
-                        <input type="text" id="subject" name="subject" required placeholder="Předmět zprávy">
+                        <input type="text" id="subject" required placeholder="Předmět zprávy">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="text-align: left;">
                         <label for="message">Zpráva</label>
-                        <textarea id="message" name="message" rows="5" required
-                            placeholder="Napište svou zprávu sem..."></textarea>
+                        <textarea id="message" rows="5" required placeholder="Napište svou zprávu sem..."></textarea>
                     </div>
-                    <button type="submit" class="form-submit-btn">Odeslat zprávu</button>
+                    <button type="submit" class="form-submit-btn" style="margin-top: 15px;">Odeslat zprávu</button>
                 </form>
             </div>
+
         </div>
     </main>
+
     <footer>
-        © 2026 Phasma. Všechna práva vyhrazena. | <a href="pravidla.html">Právní info</a>
+        © 2026 Phasma. Všechna práva vyhrazena. | <a href="pravRules.html">Právní info</a>
     </footer>
+
+    <script>
+        document.getElementById('discord-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Zabrání klasickému obnovení stránky
+
+            const webhookUrl = "https://discord.com/api/webhooks/1508115434845638657/hyoknygrTcyJ0DJO-E7d9wUUQpFGwf2r9Tv4woxrCNdccKrOcbwfaQw1I2LHAVaoqfap";
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            const currentTime = new Date().toISOString().replace('T', ' ').substring(0, 19);
+
+            // Formátování zprávy pro Discord
+            let discordText = "👻 **Nová zpráva z Phasmophobia Guide!**\n";
+            discordText += "━━━━━━━━━━━━━━━━━━━━━━━━\n";
+            discordText += "👤 **Jméno:** ".concat(name, "\n");
+            discordText += "📧 **E-mail:** ".concat(email, "\n");
+            discordText += "📌 **Předmět:** ".concat(subject, "\n");
+            discordText += "💬 **Zpráva:**\n".concat(message, "\n");
+            discordText += "━━━━━━━━━━━━━━━━━━━━━━━━\n";
+            discordText += "⏰ *Odesláno: ".concat(currentTime, "*");
+
+            const payload = {
+                content: discordText
+            };
+
+            // Odeslání dat přes prohlížeč na Discord API
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+                .then(response => {
+                    const formBox = document.getElementById('form-box');
+                    if (response.ok) {
+                        // Úspěch - Vykreslí zelené potvrzení přímo do stránky
+                        formBox.innerHTML = `
+                    <h2 style="color: #4caf50;">Úspěšně odesláno!</h2>
+                    <p style="color: #fff;">Vaše zpráva byla úspěšně nahrána a odeslána na Discord.</p>
+                    <div style="text-align: left; background: #111; padding: 15px; border-radius: 6px; margin: 20px 0; border: 1px dashed #444; color: #ccc;">
+                        <p style="margin: 5px 0;"><strong>Jméno:</strong> ${name}</p>
+                        <p style="margin: 5px 0;"><strong>E-mail:</strong> ${email}</p>
+                        <p style="margin: 5px 0;"><strong>Předmět:</strong> ${subject}</p>
+                    </div>
+                    <div class="back-button" style="margin-top: 30px;">
+                        <a href="kontakt.html" style="width: auto; text-decoration: none; color: #fff; background: #333; padding: 10px 20px; border-radius: 4px;">Poslat další zprávu</a>
+                    </div>
+                `;
+                    } else {
+                        alert('Chyba při komunikaci s Discordem. Kód: ' + response.status);
+                    }
+                })
+                .catch(error => {
+                    alert('Nastala chyba při odesílání: ' + error);
+                });
+        });
+    </script>
 </body>
 
 </html>
