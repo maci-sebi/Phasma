@@ -1,43 +1,29 @@
-# Phasma - Příručka pro lovce duchů
+# Phasma
 
-Vítejte na **Phasma** - kompletní příručce a tutoriálu pro všechny lovce duchů ve hře **Phasmophobia**!
+Vítejte v neoficiální encyklopedii a průvodci pro hru **Phasmophobia**! Tato webová stránka slouží jako kompletní tahák (cheat sheet) a pomocník pro začínající i pokročilé lovce duchů. Najdete zde všechny potřebné informace pro úspěšné přežití kontraktu a správné určení typu ducha.
 
-## O projektu
+## Funkce webu
 
-Tato webová stránka je navržena jako **interaktivní příručka** pro hráče Phasmophobia. Najdete zde všechny informace potřebné k úspěšnému lovu duchů:
+Stránka je rozdělena do několika přehledných sekcí:
 
--  **Všechny typy duchů** - detailní popis chování a vlastností
--  **Mapy a lokace** - průvodce všemi dostupnými mapami
--  **Prokleté předměty** - seznam všech prokletých objektů a jejich efektů
--  **Nejnovější aktualizace** - informace o posledních změnách ve hře
+### Duchové
+* Kompletní seznam všech typů duchů vyskytujících se ve hře.
+* Podrobný popis jejich chování, silných a slabých stránek.
+* Specifické charakteristiky (např. rychlost, prahy duševního zdraví/sanity pro lov).
 
-##  Hlavní funkce
+### Vybavení a předměty
+* Přehled veškerého startovního i dokoupitelného vybavení (EMF, UV lampa, teploměr, atd.).
+* Popis funkčnosti jednotlivých tierů (Tier I, Tier II, Tier III) a jak je efektivně používat.
 
- **Integrované vyhledávání** - rychle najděte informace o duších, mapách nebo předmětech <br>
- **Temný design** - pohodlné čtení s efekty deště <br>
- **Česká lokalizace** - obsah zcela v češtině <br>
+### Prokleté předměty
+* Seznam všech prokletých předmětů (Hrací skříňka, Ouija tabulka, Tarotové karty, atd.).
+* Rizika a výhody spojené s jejich aktivací a kde je na mapách hledat.
 
-## Popis struktur
+### Mapy
+* Seznam herních lokací (od malých domů jako Tanglewood po velké mapy jako Sunny Meadows).
+* Interaktivní mapy s vyznačenými pozicemi pojistek (breakerů) a prokletých předmětů.
 
-### Hlavní soubor
-- **index.html** - Domovská stránka projektu s uvítáním a navigací
-
-### Styly
-- **style/** - Složka se všemi CSS soubory
-  - `style.css` - Hlavní stylování celého projektu
-
-### Skripty
-- **scripts/** - Složka s JavaScriptovými soubory
-  - `rain.js` - Vytváří efekt padajícího deště
-
-### HTML Stránky
-- **html/** - Složka se všemi podstránkami
-  - **ghosts/** - Kategorie o duších
-  - **maps/** - Kategorie o mapách
-  - **cursed_objects/** - Kategorie o prokletých předmětech
-  - **needed/** - Pomocné stránky (Kontakt, O hře, O mně, Pravidla)
-
-### Další složky
-- **fonts/** - Vlastní webové fonty
-- **audio/** - Zvukové efekty a audio soubory
-- **images/** - Obrázky, ikony a loga
+### Použité technologie
+* **HTML** – struktura webu
+* **CSS** – moderní a strašidelný design
+* **JavaScript** – interaktivní prvky (např. filtrování duchů podle důkazů)
